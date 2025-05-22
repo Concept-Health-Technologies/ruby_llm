@@ -40,7 +40,7 @@ module RubyLLM
 
     def initialize
       # Connection configuration
-      @request_timeout = 120
+      @request_timeout = 300
       @max_retries = 3
       @retry_interval = 0.1
       @retry_backoff_factor = 2
