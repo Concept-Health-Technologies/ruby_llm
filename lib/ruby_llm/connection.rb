@@ -37,6 +37,7 @@ module RubyLLM
 
     def setup_timeout(faraday)
       faraday.options.timeout = @config.request_timeout
+      faraday.options.read_timeout = @config.request_timeout
     end
 
     def setup_logging(faraday)
